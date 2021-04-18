@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            margin: 50px;
+            text-align: center;
+            border-style:double;
+            border-width:5px;
+            line-height: 4pt;
+            padding-left:20px;
+        }
+        div{
+            margin-left:50px;
+        }
+        
+    </style>
+    <body>
+        <h1 style="font-family:Arial, Helvetica, sans-serif;font-weight:600;font-size: 36px;line-height: 30pt;">Alz Quiz Application</h1>
+
+        <h1 style="font-family:Arial, Helvetica, sans-serif;font-weight:600;font-size: 24px;">Weekly Report</h1>
+        <br>
+        <br>
+        <h3 style="font-family:Arial, Helvetica, sans-serif;font-size: 15px;text-align:left">Name : {{name}}</h3>
+        <h3 style="font-family:Arial, Helvetica, sans-serif;font-size: 15px;text-align:left">Date : {{date}}</h3>
+        <h3 style="font-family:Arial, Helvetica, sans-serif;font-size: 15px;text-align:left">Time : {{time}}</h3>
+        <br>
+        <div>
+            <h2 style="font-family:Arial, Helvetica, sans-serif;font-size: 24px;font-weight:600;text-align:left;margin-left:-30px;text-decoration-line: underline;">Analysis:</h2>
+            <br>
+            <h3 style="font-family:Arial, Helvetica, sans-serif;font-size: 18px;text-align:left">Colour Game :</h3>
+            <div>
+                <br>
+                <h4 style="font-family:Arial, Helvetica, sans-serif;font-size: 16px;text-align:left">Performance :</h4>
+                <div>
+                    <img src={{c_url}} alt="Colour_Graph" width="700px" height="400px">
+                </div>
+                <h4 style="font-family:Arial, Helvetica, sans-serif;font-size: 16px;text-align:left">Colour Points Aggregate : {{cp}}</h4>
+                <br>
+                <h4 style="font-family:Arial, Helvetica, sans-serif;font-size: 16px;text-align:left">Verdict: <span style="font-style: italic;font-weight:900;">{{cp_t}}</span></h4>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h3 style="font-family:Arial, Helvetica, sans-serif;font-size: 18px;text-align:left">Map Game :</h3>
+            <div>
+                <br>
+                <h4 style="font-family:Arial, Helvetica, sans-serif;font-size: 16px;text-align:left">Performance :</h4>
+
+                    <img src={{m_url}} alt="Colour_Graph" width="700px" height="400px">
+
+                <h4 style="font-family:Arial, Helvetica, sans-serif;font-size: 16px;text-align:left">Map Points Aggregate : {{mp}}</h4>
+                <br>
+                <h4 style="font-family:Arial, Helvetica, sans-serif;font-size: 16px;text-align:left">Verdict: <span style="font-style: italic;font-weight:900;">{{mp_t}}</span></h4>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h3 style="font-family:Arial, Helvetica, sans-serif;font-size: 18px;text-align:left">Word Game :</h3>
+            <div>
+                <br>
+                <h4 style="font-family:Arial, Helvetica, sans-serif;font-size: 16px;text-align:left">Performance :</h4>
+                <div>
+                    <img src={{w_url}} alt="Colour_Graph" width="700px" height="400px">
+                </div>
+                <h4 style="font-family:Arial, Helvetica, sans-serif;font-size: 16px;text-align:left">Word Points Aggregate : {{wp}}</h4>
+                <br>
+                <h4 style="font-family:Arial, Helvetica, sans-serif;font-size: 16px;text-align:left">Verdict: <span style="font-style: italic;font-weight:900;">{{wp_t}}</span></h4>
+            </div>
+        </div>
+        <br>
+        <br><br><br>
+
+    </body>
+</html>

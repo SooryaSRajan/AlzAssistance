@@ -66,7 +66,7 @@ public class BrainTimerActivity extends AppCompatActivity {
                 hashMap.put("SCORE", score);
                 hashMap.put("TOTAL", round);
                 VolleyResult volleyResult = new VolleyResult(BrainTimerActivity.this);
-                volleyResult.setGameType("word_quiz");
+                volleyResult.setGameType("math_quiz");
                 volleyResult.setScore(hashMap.toString());
                 volleyResult.setUserId(FirebaseAuth.getInstance().getUid());
                 volleyResult.build();

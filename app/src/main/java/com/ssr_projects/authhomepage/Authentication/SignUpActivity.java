@@ -18,6 +18,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.ssr_projects.authhomepage.MainActivity;
 import com.ssr_projects.authhomepage.R;
 
@@ -116,6 +117,21 @@ public class SignUpActivity extends AppCompatActivity {
                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
+
+                                    FirebaseMessaging.getInstance().getToken()
+                                            .addOnCompleteListener(new OnCompleteListener<String>() {
+                                                @Override
+                                                public void onComplete(@NonNull Task<String> task) {
+                                                    if (!task.isSuccessful()) {
+                                                        Log.w("TAG", "Fetching FCM registration token failed", task.getException());
+                                                        return;
+                                                    }
+                                                    String token = task.getResult();
+                                                    FirebaseDatabase.getInstance().getReference().child("TOKEN").child(token).setValue(FirebaseAuth.getInstance().getUid());
+                                                    Log.e("FIREBASE", "onComplete: " + token );
+                                                }
+                                            });
+
                                     Toast.makeText(SignUpActivity.this, "Email verification sent, please verify email", Toast.LENGTH_SHORT).show();
 
                                     FirebaseDatabase.getInstance().getReference().child("USER")

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,6 +16,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.ssr_projects.authhomepage.MainActivity;
 import com.ssr_projects.authhomepage.R;
 
@@ -72,6 +75,22 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
+
+                    FirebaseMessaging.getInstance().getToken()
+                            .addOnCompleteListener(new OnCompleteListener<String>() {
+                                @Override
+                                public void onComplete(@NonNull Task<String> task) {
+                                    if (!task.isSuccessful()) {
+                                        Log.w("TAG", "Fetching FCM registration token failed", task.getException());
+                                        return;
+                                    }
+                                    String token = task.getResult();
+                                    FirebaseDatabase.getInstance().getReference().child("TOKEN").child(token).setValue(FirebaseAuth.getInstance().getUid());
+                                    Log.e("FIREBASE", "onComplete: " + token );
+                                }
+                            });
+
+
                     if(FirebaseAuth.getInstance().getCurrentUser().isEmailVerified()){
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
