@@ -1,0 +1,28 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory app:title="App Theme">
+
+        <SwitchPreferenceCompat
+            app:key="theme"
+            app:summary="Enable Dark Mode"
+            app:title="Dark Theme" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Emergency Options">
+
+        <SwitchPreferenceCompat
+            app:key="audio_sos"
+            app:summary="SOS audio"
+            app:title="Toggle SOS audio"/>
+
+        <SwitchPreferenceCompat
+            app:key="torch_sos"
+            app:summary="SOS torch"
+            app:title="Toggle SOS torch beacon"/>
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

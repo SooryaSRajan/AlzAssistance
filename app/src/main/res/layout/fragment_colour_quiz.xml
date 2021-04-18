@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorQuiz.ColourQuizFragment">
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progress_circular_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_margin="15dp"
+        android:layout_alignParentTop="true"
+        android:text="What colors do you see in this image?"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_below="@+id/top_text"
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
+        android:scaleType="centerCrop" />
+
+    <CheckBox
+        android:buttonTint="@color/textColor"
+        android:textColor="@color/textColor"
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@id/imageView"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="25sp" />
+
+    <CheckBox
+        android:buttonTint="@color/textColor"
+        android:textColor="@color/textColor"
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox1"
+        android:layout_alignStart="@id/imageView"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textSize="25sp" />
+
+    <CheckBox
+        android:buttonTint="@color/textColor"
+        android:textColor="@color/textColor"
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox2"
+        android:layout_alignStart="@id/imageView"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textSize="25sp" />
+
+    <CheckBox
+        android:buttonTint="@color/textColor"
+        android:textColor="@color/textColor"
+        android:id="@+id/checkbox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox3"
+        android:layout_alignStart="@id/imageView"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textSize="25sp" />
+
+    <CheckBox
+        android:buttonTint="@color/textColor"
+        android:textColor="@color/textColor"
+        android:id="@+id/checkbox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox4"
+        android:layout_alignStart="@id/imageView"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textSize="25sp" />
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:id="@+id/ResultButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="50dp"/>
+
+</RelativeLayout>

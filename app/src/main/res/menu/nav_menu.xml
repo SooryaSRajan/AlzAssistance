@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home_nav" android:title="Friends" android:icon="@drawable/ic_baseline_home_24"
+        tools:ignore="HardcodedText" />
+    <item android:id="@+id/profile_nav" android:title="Players" android:icon="@drawable/ic_baseline_person_24"
+        tools:ignore="HardcodedText" />
+
+</menu>

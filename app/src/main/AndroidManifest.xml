@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ssr_projects.authhomepage">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup">
+        <activity android:name=".EditActivity"></activity>
+        <activity android:name=".Emergency.EmergencyLauncherActivity" />
+        <activity android:name=".Emergency.EmergencyActivity" />
+        <activity android:name=".Authentication.SignUpActivity" />
+        <activity android:name=".Authentication.LoginActivity" />
+        <activity android:name=".MapsQuiz.MapsActivity" />
+        <activity android:name=".ColorQuiz.ColorActivity" />
+        <activity android:name=".Quiz.QuizActivity" />
+        <activity android:name=".MathQuiz.BrainTimerActivity" />
+        <activity android:name=".Authentication.LoginSignUpActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Settings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/PreferenceScreen" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBD22MnCfUAay3T_XYsUejV5YnAQKOY0NY" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service android:name=".FirebaseCloudMessages.InstanceIdentificationTokenService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FirebaseCloudMessages.FirebaseNotification"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Emergency.SosService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

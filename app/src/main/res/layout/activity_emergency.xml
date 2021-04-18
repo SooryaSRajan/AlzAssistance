@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Emergency.EmergencyActivity">
+
+    <TextView
+        android:id="@+id/top_text"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="If you did not intentionally click this button, please click on cancel before"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_below="@+id/top_text"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="(5s)"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+
+    <Button
+        android:onClick="cancelTimer"
+        android:textSize="32sp"
+        android:text="Cancel"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="130dp"
+        android:layout_below="@+id/count"
+        android:id="@+id/cancel"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

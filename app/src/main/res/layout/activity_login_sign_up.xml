@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.LoginSignUpActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:textSize="40sp"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/caption"
+        android:layout_below="@+id/title"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/caption"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:onClick="loginButton"
+        android:textSize="16sp"
+        android:id="@+id/login_page"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/colorAccent"
+        android:text="@string/login"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_below="@+id/caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#D3D3D3"
+        android:id="@+id/or"
+        android:textSize="22sp"
+        android:text="or"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/login_page"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:onClick="signUp"
+        android:layout_below="@+id/or"
+        android:id="@+id/sing_in"
+        android:text="Sign Up Using Email"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/developed_by"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/sing_in"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

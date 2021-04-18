@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:background="@drawable/text_box_background"
+            android:id="@+id/username_signup_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter Name..."
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
+
+        <EditText
+            android:visibility="gone"
+            android:background="@drawable/text_box_background"
+            android:id="@+id/email_signup_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_signup"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter Email..."
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
+
+        <EditText
+            android:visibility="gone"
+            android:background="@drawable/text_box_background"
+            android:id="@+id/password_signup_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_signup"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter Password..."
+            android:inputType="textPassword"
+            android:padding="16dp" />
+
+        <EditText
+            android:visibility="gone"
+            android:background="@drawable/text_box_background"
+            android:id="@+id/password2_signup_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password2_signup"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter Password Again..."
+            android:inputType="textPassword"
+            android:padding="16dp" />
+
+        <EditText
+            android:background="@drawable/text_box_background"
+            android:id="@+id/emergencyContactName_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emergencyContactName"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter Name of Emergency contact..."
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
+
+        <EditText
+            android:background="@drawable/text_box_background"
+            android:id="@+id/emergencyContactNumber_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emergencyContactNumber"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter Emergency contact number..."
+            android:inputType="phone"
+            android:padding="16dp" />
+
+        <EditText
+            android:background="@drawable/text_box_background"
+            android:id="@+id/emergencyContactEmail_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emergencyContactEmail"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter Emergency contact Email..."
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
+
+        <EditText
+            android:background="@drawable/text_box_background"
+            android:id="@+id/medicalConditions_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/medicalConditions"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Kindly enter all medical conditions..."
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
+
+        <EditText
+            android:background="@drawable/text_box_background"
+            android:id="@+id/bloodGroup_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bloodGroup"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter Blood Group..."
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
+
+
+        <TextView
+            android:id="@+id/signup_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Edit Details"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Name" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/email_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username_signup_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Email" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/password_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_signup_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Password" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/password2_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_signup_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Password" />
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/emergencyContactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password2_signup_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Emergency contact Name" />
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/emergencyContactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emergencyContactName_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Emergency contact Number" />
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/emergencyContactEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emergencyContactNumber_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Emergency contact Email" />
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/medicalConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emergencyContactEmail_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Medical Conditions" />
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/bloodGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/medicalConditions_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Blood Group" />
+
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bloodGroup_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button_background"
+            android:text="Submit Changes"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+</ScrollView>

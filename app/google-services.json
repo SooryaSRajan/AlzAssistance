@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "832624463415",
+    "project_id": "alzimers-firebase",
+    "storage_bucket": "alzimers-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832624463415:android:061314f7b1402b5161b9b2",
+        "android_client_info": {
+          "package_name": "com.ssr_projects.authhomepage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832624463415-r93u7ugt25hhp4srermgf4tb3ti820q9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6CZnYGXM4MxHLBJzYJTAEg96ywW5Fjqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832624463415-r93u7ugt25hhp4srermgf4tb3ti820q9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

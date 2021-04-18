@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsQuiz.MapsFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_above="@+id/text"
+        android:id="@+id/quizmap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        tools:context=".MapsFragment" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_above="@+id/opt1"
+        android:layout_width="400dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/location_marked"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_above="@+id/opt2"
+        android:id="@+id/opt1"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:tag="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_above="@+id/opt3"
+        android:id="@+id/opt2"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:tag="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_above="@+id/opt4"
+        android:id="@+id/opt3"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:tag="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/opt4"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:tag="3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+</RelativeLayout>
